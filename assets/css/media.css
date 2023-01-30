@@ -99,6 +99,7 @@
 
     .nav.active {
         display: block;
+        z-index: 1;
     }
 
     .nav__link {
