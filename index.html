@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="assets/css/media.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -32,7 +33,9 @@
         </button>
     </div>
     <div class="container">
-        <h1 class="header__title">Первый курс по компьютерной сборке</h1>
+        <div data-aos="zoom-in-down">
+            <h1 class="header__title">Первый курс по компьютерной сборке</h1>
+        </div>
         <div id="countdown" class="header__watch">
             <div class="header__time">
                 <span class="days header__time--numeric">18</span>
@@ -85,18 +88,24 @@
 
 <section class="about">
     <div class="container about__container">
-        <div class="about__photo"></div>
-        <div class="about__content">
-            <h2 class="title__content">Чем мы занимаемся?</h2>
-            <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget neque, dignissim et feugiat elit augue in suspendisse egestas. Dictum vestibulum mi et sed nunc, orci fermentum vestibulum, morbi. Et neque, adipiscing sapien sem senectus praesent aenean consequat. Aenean facilisi turpis aliquet fringilla. Nunc sem felis sed interdum feugiat mattis elit, sollicitudin. Quam pharetra rhoncus risus, cursus id elementum aliquet. Nullam turpis arcu malesuada arcu interdum placerat nisi, lobortis. </p>
+        <div data-aos="fade-up" data-aos-duration="3000">
+            <div class="about__photo"></div>
+        </div>
+        <div data-aos="zoom-in-down" data-aos-duration="2000">
+            <div class="about__content">
+                <h2 class="title__content">Чем мы занимаемся?</h2>
+                <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget neque, dignissim et feugiat elit augue in suspendisse egestas. Dictum vestibulum mi et sed nunc, orci fermentum vestibulum, morbi. Et neque, adipiscing sapien sem senectus praesent aenean consequat. Aenean facilisi turpis aliquet fringilla. Nunc sem felis sed interdum feugiat mattis elit, sollicitudin. Quam pharetra rhoncus risus, cursus id elementum aliquet. Nullam turpis arcu malesuada arcu interdum placerat nisi, lobortis. </p>
+            </div>
         </div>
     </div>
 </section>
 <section class="start">
     <div class="container">
-        <div class="titile__ellipse">
-            <img src="assets/img/start/Ellipse.png">
-            <h2 class="title__content">Быстрый старт</h2>
+        <div data-aos="fade-up" data-aos-anchor-placement="bottom-center">
+            <div class="titile__ellipse">
+                <img src="assets/img/start/Ellipse.png">
+                <h2 class="title__content">Быстрый старт</h2>
+            </div>
         </div>
         <p class="start__text">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
         <div class="start__info">
@@ -106,11 +115,13 @@
                 <h4 class="start__numbers--division">50%</h4>
                 <h4 class="start__numbers--division">Итог</h4>
             </div>
-            <div class="start__statistics">
-                <div class="start__statistics--division"></div>
-                <div class="start__statistics--division start__statistics--75"></div>
-                <div class="start__statistics--division start__statistics--50"></div>
-                <div class="start__statistics--division start__statistics--25"></div>
+            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="start__statistics">
+                    <div class="start__statistics--division"></div>
+                    <div class="start__statistics--division start__statistics--75"></div>
+                    <div class="start__statistics--division start__statistics--50"></div>
+                    <div class="start__statistics--division start__statistics--25"></div>
+                </div>
             </div>
             <div class="start__content">
                 <p class="start__content--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
@@ -123,97 +134,140 @@
 </section>
 <section class="profession">
     <div class="container profession__container">
-        <h2 class="title__content">Получите профессию прямо сейчас</h2>
+        <div data-aos="zoom-in">
+            <h2 class="title__content">Получите профессию прямо сейчас</h2>
+        </div>
         <div class="profession__about">
-            <div class="profession__content">
-                <img src="assets/img/profession/icon-pc.png">
-                <h3 class="profession__content--tittle">Только практические навыки в работе</h3>
-                <p class="profession__content--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+                <div class="profession__content">
+                    <img src="assets/img/profession/icon-pc.png">
+                    <h3 class="profession__content--tittle">Только практические навыки в работе</h3>
+                    <p class="profession__content--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+                </div>
             </div>
-            <div class="profession__content">
-                <img src="assets/img/profession/icon-flash.png">
-                <h3 class="profession__content--tittle">Работа на самом современном оборудовании</h3>
-                <p class="profession__content--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000">
+                <div class="profession__content">
+                    <img src="assets/img/profession/icon-flash.png">
+                    <h3 class="profession__content--tittle">Работа на самом современном оборудовании</h3>
+                    <p class="profession__content--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+                </div>
             </div>
-            <div class="profession__content">
-                <img src="assets/img/profession/icon-usb.png">
-                <h3 class="profession__content--tittle">Сертификация по окончании обучения</h3>
-                <p class="profession__content--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="3000">
+                <div class="profession__content">
+                    <img src="assets/img/profession/icon-usb.png">
+                    <h3 class="profession__content--tittle">Сертификация по окончании обучения</h3>
+                    <p class="profession__content--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 <section class="brandy">
     <div class="container">
-        <div class="titile__ellipse">
-            <img src="assets/img/brandy/Ellipse.png">
-            <h2 class="title__content">Партнеры - топовые бренды</h2>
+        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <div class="titile__ellipse">
+                <img src="assets/img/brandy/Ellipse.png">
+                <h2 class="title__content">Партнеры - топовые бренды</h2>
+            </div>
         </div>
         <div class="brandy__container">
             <div class="brandy__border">
-                <img class="brandy__item" src="assets/img/brandy/logo.png">
+                <div data-aos="flip-left" data-aos-duration="1500">
+                    <img class="brandy__item" src="assets/img/brandy/logo.png">
+                </div>
             </div>
             <div class="brandy__border">
-                <img class="brandy__item" src="assets/img/brandy/logo.png">
+                <div data-aos="flip-left" data-aos-duration="1500">
+                    <img class="brandy__item" src="assets/img/brandy/logo.png">
+                </div>
             </div>
             <div class="brandy__border">
-                <img class="brandy__item" src="assets/img/brandy/logo.png">
+                <div data-aos="flip-left" data-aos-duration="1500">
+                    <img class="brandy__item" src="assets/img/brandy/logo.png">
+                </div>
             </div>
             <div class="brandy__border">
-                <img class="brandy__item" src="assets/img/brandy/logo.png">
+                <div data-aos="flip-left" data-aos-duration="2500">
+                    <img class="brandy__item" src="assets/img/brandy/logo.png">
+                </div>
             </div>
             <div class="brandy__border">
-                <img class="brandy__item" src="assets/img/brandy/logo.png">
+                <div data-aos="flip-left" data-aos-duration="1500">
+                    <img class="brandy__item" src="assets/img/brandy/logo.png">
+                </div>
             </div>
             <div class="brandy__border">
-                <img class="brandy__item" src="assets/img/brandy/logo.png">
+                <div data-aos="flip-left" data-aos-duration="2000">
+                    <img class="brandy__item" src="assets/img/brandy/logo.png">
+                </div>
             </div>
             <div class="brandy__border">
-                <img class="brandy__item" src="assets/img/brandy/logo.png">
+                <div data-aos="flip-left" data-aos-duration="2500">
+                    <img class="brandy__item" src="assets/img/brandy/logo.png">
+                </div>
             </div>
             <div class="brandy__border">
-                <img class="brandy__item" src="assets/img/brandy/logo.png">
+                <div data-aos="flip-left" data-aos-duration="3000">
+                    <img class="brandy__item" src="assets/img/brandy/logo.png">
+                </div>
             </div>
         </div>
     </div>
 </section>
 <section class="program">
     <div class="container program__container">
-        <img class="program__ellipse" src="assets/img/program/Ellipse.png">
-        <h2 class="title__content">Программа обучения</h2>
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <img class="program__ellipse" src="assets/img/program/Ellipse.png">
+            <h2 class="title__content">Программа обучения</h2>
+        </div>
         <p class="program__text">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
         <div class="program__letter">
             <div class="program__letter--left">
                 <div class="program__left--item">
-                    <h4 class="program__item--title">Неделя №1</h4>
-                    <p class="program__item--text">Красивая часть курса, которая помогает в успехе</p>
+                    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <h4 class="program__item--title">Неделя №1</h4>
+                        <p class="program__item--text">Красивая часть курса, которая помогает в успехе</p>
+                    </div>
                 </div>
                 <div class="program__left--item program__item__top">
-                    <h4 class="program__item--title">Неделя №3</h4>
-                    <p class="program__item--text">Красивая часть курса, которая помогает в успехе</p>
+                    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <h4 class="program__item--title">Неделя №3</h4>
+                        <p class="program__item--text">Красивая часть курса, которая помогает в успехе</p>
+                    </div>
                 </div>
                 <div class="program__left--item program__item__top">
-                    <h4 class="program__item--title">Неделя №5</h4>
-                    <p class="program__item--text">Красивая часть курса, которая помогает в успехе</p>
+                    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <h4 class="program__item--title">Неделя №5</h4>
+                        <p class="program__item--text">Красивая часть курса, которая помогает в успехе</p>
+                    </div>
                 </div>
                 <div class="program__left--item program__item__top">
-                    <h4 class="program__item--title">Неделя №7</h4>
-                    <p class="program__item--text">Красивая часть курса, которая помогает в успехе</p>
+                    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <h4 class="program__item--title">Неделя №7</h4>
+                        <p class="program__item--text">Красивая часть курса, которая помогает в успехе</p>
+                    </div>
                 </div>
             </div>
             <div class="program__letter--center"></div>
             <div class="program__letter--right">
                 <div class="program__right--item program__item__top">
-                    <h4 class="program__item--title">Неделя №2</h4>
-                    <p class="program__item--text">Красивая часть курса, которая помогает в успехе</p>
+                    <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <h4 class="program__item--title">Неделя №2</h4>
+                        <p class="program__item--text">Красивая часть курса, которая помогает в успехе</p>
+                    </div>
                 </div>
                 <div class="program__right--item program__item__top">
-                    <h4 class="program__item--title">Неделя №4</h4>
-                    <p class="program__item--text">Красивая часть курса, которая помогает в успехе</p>
+                    <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <h4 class="program__item--title">Неделя №4</h4>
+                        <p class="program__item--text">Красивая часть курса, которая помогает в успехе</p>
+                    </div>
                 </div>
                 <div class="program__right--item program__item__top">
-                    <h4 class="program__item--title">Неделя №6</h4>
-                    <p class="program__item--text">Красивая часть курса, которая помогает в успехе</p>
+                    <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <h4 class="program__item--title">Неделя №6</h4>
+                        <p class="program__item--text">Красивая часть курса, которая помогает в успехе</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -222,52 +276,62 @@
 <section class="teacher">
     <div class="container">
         <div class="titile__ellipse titile__ellipse--teacher">
-            <img src="assets/img/teacher/Ellipse.png">
-            <h2 class="title__content">Ваши преподаватели</h2>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <img src="assets/img/teacher/Ellipse.png">
+                <h2 class="title__content">Ваши преподаватели</h2>
+            </div>
         </div>
         <div class="teacher__people">
             <div class="teacher__people--item">
-                <img src="assets/img/teacher/men1.png">
-                <h3 class="teacher__item--name">Дмитрий Иванов</h3>
-                <p class="teacher__item--profession">Специалист по видеокартам</p>
-                <a href="#" class="teacher__item--button">Биография</a>
+                <div data-aos="zoom-out-right">
+                    <img src="assets/img/teacher/men1.png">
+                    <h3 class="teacher__item--name">Дмитрий Иванов</h3>
+                    <p class="teacher__item--profession">Специалист по видеокартам</p>
+                    <a href="#" class="teacher__item--button">Биография</a>
+                </div>
             </div>
             <div class="teacher__people--item">
-                <img src="assets/img/teacher/men2.png">
-                <h3 class="teacher__item--name">Дмитрий Иванов</h3>
-                <p class="teacher__item--profession">Специалист по видеокартам</p>
-                <a href="#" class="teacher__item--button">Биография</a>
+                <div data-aos="zoom-in">
+                    <img src="assets/img/teacher/men2.png">
+                    <h3 class="teacher__item--name">Дмитрий Иванов</h3>
+                    <p class="teacher__item--profession">Специалист по видеокартам</p>
+                    <a href="#" class="teacher__item--button">Биография</a>
+                </div>
             </div>
             <div class="teacher__people--item">
-                <img src="assets/img/teacher/men3.png">
-                <h3 class="teacher__item--name">Дмитрий Иванов</h3>
-                <p class="teacher__item--profession">Специалист по видеокартам</p>
-                <a href="#" class="teacher__item--button">Биография</a>
+                <div data-aos="zoom-out-left">
+                    <img src="assets/img/teacher/men3.png">
+                    <h3 class="teacher__item--name">Дмитрий Иванов</h3>
+                    <p class="teacher__item--profession">Специалист по видеокартам</p>
+                    <a href="#" class="teacher__item--button">Биография</a>
+                </div>
             </div>
         </div>
     </div>
 </section>
 <section class="form">
     <div class="container">
-        <h2 class="title__content">Статьи каждую неделю</h2>
-        <p class="program__text">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
-        <form>
-            <input type="text" placeholder="E-mail">
-            <button class="form__button" type="submit">Подписаться</button>
-        </form>
-        <div class="form__social">
-            <a href="#" class="form__social--item">
-                <img src="assets/img/social/vk.png">
-            </a>
-            <a href="#" class="form__social--item">
-                <img src="assets/img/social/you.png">
-            </a>
-            <a href="#" class="form__social--item">
-                <img src="assets/img/social/f.png">
-            </a>
-            <a href="#" class="form__social--item">
-                <img src="assets/img/social/instagram.png">
-            </a>
+        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <h2 class="title__content">Статьи каждую неделю</h2>
+            <p class="program__text">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
+            <form>
+                <input type="text" placeholder="E-mail">
+                <button class="form__button" type="submit">Подписаться</button>
+            </form>
+            <div class="form__social">
+                <a href="#" class="form__social--item">
+                    <img src="assets/img/social/vk.png">
+                </a>
+                <a href="#" class="form__social--item">
+                    <img src="assets/img/social/you.png">
+                </a>
+                <a href="#" class="form__social--item">
+                    <img src="assets/img/social/f.png">
+                </a>
+                <a href="#" class="form__social--item">
+                    <img src="assets/img/social/instagram.png">
+                </a>
+            </div>
         </div>
     </div>
 </section>
@@ -278,5 +342,9 @@
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
